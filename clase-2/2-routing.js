@@ -1,7 +1,9 @@
 const http = require("node:http");
 
 const desiredPort = process.env.PORT || 3000;
-const processRequest = (req, res) => {};
+const processRequest = (req, res) => {
+  const { method, url } = req;
+};
 
 const server = http.createServer(processRequest);
 
